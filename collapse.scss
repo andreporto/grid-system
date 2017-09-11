@@ -1,0 +1,11 @@
+
+.expanded,
+#collapse,
+#expand:target {
+    display: none; 
+}
+
+#expand:target + #collapse,
+#expand:target ~ .expanded {
+    display: inline; 
+}

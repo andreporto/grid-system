@@ -1,0 +1,105 @@
+// Grid System by André Porto
+// License: MIT
+
+@import 'grid-system-theme.scss';
+
+
+.gs-container {
+  width: 100%;
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: middle;
+  }
+  
+  
+  .gs-row {
+    min-height: $gs-rows-height;
+    // padding: $gs-row-padding;
+  
+    &:before,
+    &:after {
+      content:"";
+      display: table ;
+      clear:both;
+    }
+    
+    &.gs-row-selected {
+        min-height: $gs-rows-height;
+        background-color: $gs-row-hover-background-color;
+    }
+
+  }
+
+  &.gs-striped .gs-row{
+    // Striped Effect
+    &:nth-child(even){
+        background-color: $gs-row-even-background-color;
+    }
+    &:nth-child(odd){
+        background-color: $gs-row-odd-background-color;
+    }    
+  }
+
+  
+  
+  & .gs-row{
+    &:not(.gs-header):not(.gs-footer){
+      border-top: $gs-row-border-top;
+      border-bottom: $gs-row-border-bottom;
+      border-left: $gs-row-border-left;
+      border-right: $gs-row-border-right;
+      
+      &:hover {
+        background-color: $gs-row-hover-background-color;
+      }
+    }
+
+    &.gs-header {
+      border-top: $gs-header-border-top;
+      border-bottom: $gs-header-border-bottom;
+      border-left: $gs-header-border-left;
+      border-right: $gs-header-border-right;
+      background-color: $gs-header-background-color !important;
+    }
+    
+    &.gs-footer {
+      border-top: $gs-footer-border-top;
+      border-bottom: $gs-footer-border-bottom;
+      border-left: $gs-footer-border-left;
+      border-right: $gs-footer-border-right;
+      background-color: $gs-footer-background-color !important;
+    }
+  }
+
+  $gs-col-class-name: gs-col !default;
+  @for $i from 1 through $gs-cols-number {
+    .#{$gs-col-class-name}#{$i} {
+      float: left;
+      min-height: 1px;
+      width: $i/$gs-cols-number * 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .gs-outline {
+      outline: $gs-outline-border;
+  }
+
+  .gs-no-decorations {
+    background: none;
+    border: none;
+      &:hover {
+        background: none;
+      }
+  }
+
+  .gs-no-animations {
+    -webkit-transition: height 0;
+    -moz-transition: height 0;
+    -ms-transition: height 0;
+    -o-transition: height 0;
+    transition: height 0;
+  }
+
+}

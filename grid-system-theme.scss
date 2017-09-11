@@ -1,0 +1,35 @@
+// Grid System - theme variables
+
+$gs-rows-height: 45px;
+$gs-cols-number: 12;
+$gs-border-color: #c3c3c3;
+
+$gs-row-border-top: none;
+$gs-row-border-bottom: 1px solid $gs-border-color;
+$gs-row-border-left: none;
+$gs-row-border-right: none;
+$gs-row-odd-background-color: #fff;
+$gs-row-even-background-color: #d3d3d3;
+$gs-row-hover-background-color: #a6a6a6;
+$gs-row-padding: 0;
+
+$gs-col-border-top: none;
+$gs-col-border-bottom: none;
+$gs-col-border-left: none;
+$gs-col-border-right: none;
+
+$gs-header-border-top: 1px solid $gs-border-color;
+$gs-header-border-bottom: 1px solid $gs-border-color;
+$gs-header-border-left: none;
+$gs-header-border-right: none;
+$gs-header-hover-background-color: none;
+$gs-header-background-color: #fff;
+
+$gs-footer-border-top: none;
+$gs-footer-border-bottom: 1px solid $gs-border-color;
+$gs-footer-border-left: none;
+$gs-footer-border-right: none;
+$gs-footer-hover-background-color: none;
+$gs-footer-background-color: #fff;
+
+$gs-outline-border: 1px solid $gs-border-color;

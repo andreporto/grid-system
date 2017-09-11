@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,2BAA4B;EACxB,UAAU,EAAE,MAAM;;AAGtB,uBAAwB;EACpB,UAAU,EAAE,IAAI;;AAGpB,yBAA0B;EACtB,UAAU,EAAE,KAAK",
+"sources": ["../alignment-system.scss"],
+"names": [],
+"file": "alignment-system.css"
+}

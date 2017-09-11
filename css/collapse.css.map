@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA;;cAEe;EACX,OAAO,EAAE,IAAI;;AAGjB;0BAC2B;EACvB,OAAO,EAAE,MAAM",
+"sources": ["../collapse.scss"],
+"names": [],
+"file": "collapse.css"
+}
