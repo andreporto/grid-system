@@ -1,6 +1,6 @@
 # grid-system
 
-This is a simple and easy to use grid system.
+This is a simple and easy to use 12 columns grid system.
 
 If what you need is only a small grid system then this is your answer.
 
