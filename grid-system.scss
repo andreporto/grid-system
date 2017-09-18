@@ -10,6 +10,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     vertical-align: middle;
+    align-items: center;
   }
   
   
@@ -31,17 +32,15 @@
 
   }
 
-  &.gs-striped .gs-row{
+  .gs-row.gs-striped{
     // Striped Effect
-    &:nth-child(even){
+    &:nth-of-type(even){
         background-color: $gs-row-even-background-color;
     }
-    &:nth-child(odd){
+    &:nth-of-type(odd){
         background-color: $gs-row-odd-background-color;
     }    
   }
-
-  
   
   & .gs-row{
     &:not(.gs-header):not(.gs-footer){
@@ -83,7 +82,7 @@
   }
 
   .gs-outline {
-      outline: $gs-outline-border;
+      border: $gs-outline-border;
   }
 
   .gs-no-decorations {

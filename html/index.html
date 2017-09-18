@@ -5,50 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="../css/collapse.css">
     <link rel="stylesheet" href="../css/alignment-system.css">
     <link rel="stylesheet" href="../css/grid-system.css">
     <title>Document</title>
 </head>
 <body>
-    <p>Teste de Grid System</p>
-    <div class="gs-container gs-striped">
+    <p>Porto Grid System</p>
+    <div class="gs-container">
         <div class="gs-row gs-header">
-            <div class="gs-col2"><p>hhja</p></div>
-            <div class="gs-col4"><p>jhjhb</p></div>
-            <div class="gs-col3">c</div>
-            <div class="gs-col3">d</div>
+            <div class="gs-col2 gs-outline"><p>p1</p></div>
+            <div class="gs-col4 gs-outline"><p>p2</p></div>
+            <div class="gs-col3 gs-outline">t1</div>
+            <div class="gs-col3 gs-outline">t2</div>
         </div>
-        <div class="gs-row">
-            <div class="gs-col3 text-center"><p>e</p></div>
-            <div class="gs-col3">
-                <div class="gs-col6 text-center"><p>I</p></div>
-                <div class="gs-col6"><p>I</p></div>
+        <div class="gs-row gs-striped align-vertical">
+            <div class="gs-col2 align-center"><strong>strong</strong></div>
+            <div class="gs-col4"><p>p3</p></div>
+            <div class="gs-col3"><span>span1</span></div>
+            <div class="gs-col3"><div class="align-center">div1</div></div>
+        </div>
+        <div class="gs-row gs-striped align-vertical gs-outline">
+            <div class="gs-col3 align-center gs-outline"><p>p4</p></div>
+            <div class="gs-col3 gs-outline">
+                <div class="gs-col6 align-center"><p>p5</p></div>
+                <div class="gs-col6 align-right"><p>p6</p></div>
             </div>
-            <div class="gs-col3">g</div>
-            <div class="gs-col3">h</div>
+            <div class="gs-col3 align-center gs-outline">t3</div>
+            <div class="gs-col3 gs-outline">t4</div>
         </div>
-        <div class="gs-row">
-            <a href="#expand" id="expand">
-                <div class="gs-row">
-                    <p>teste de dados</p>
-                </div>
-                <a href="#collapse" id="collapse">
-                    <div class="gs-row">
-                        <p>teste de dados espandido</p>
-                        <!-- <div class="expanded"><p>teste de conteúdo</p></div> -->
-                        <!-- <div class="gs-row expanded"><p>Conteúdo a ser mostrado</p></div> -->
-                    </div>                                
-                </a>
-            </a>
+        <div class="gs-row gs-striped align-vertical">
+            <div class="gs-col6 align-center gs-outline">
+                col6
+            </div>
+            <div class="gs-col6 gs-outline">
+                <div class="gs-col1 align-center gs-outline">c1</div>
+                <div class="gs-col9 align-center gs-outline">c9</div>
+                <div class="gs-col2 align-center gs-outline">c2</div>
+            </div>
         </div>
         
 
-        <div class="gs-row gs-footer">
-            <div class="gs-col3">1</div>
-            <div class="gs-col2"><p>2</p></div>
-            <div class="gs-col2">3</div>
-            <div class="gs-col3">4</div>
+        <div class="gs-row gs-footer align-vertical">
+            <div class="gs-col3 align-center gs-outline">1</div>
+            <div class="gs-col2 align-center gs-outline"><p>2</p></div>
+            <div class="gs-col2 align-left gs-outline">3</div>
+            <div class="gs-col3 align-right gs-outline">4</div>
+            <div class="gs-col2 align-center gs-outline">5</div>
         </div>
     </div>
 </body>

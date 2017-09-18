@@ -1,0 +1,27 @@
+{
+  "name": "porto-grid-system",
+  "version": "1.0.0",
+  "description": "This is a simple and easy to use grid system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreporto/grid-system.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "grid",
+    "row",
+    "col",
+    "responsive"
+  ],
+  "author": "André de Alencar Porto <andreporto@yahoo.com> (http://saladatec.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreporto/grid-system/issues"
+  },
+  "homepage": "https://github.com/andreporto/grid-system#readme"
+}
