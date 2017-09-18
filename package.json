@@ -1,6 +1,6 @@
 {
   "name": "porto-grid-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a simple and easy to use grid system.",
   "main": "index.js",
   "scripts": {
