@@ -1,23 +1,23 @@
 // Grid System - theme variables
 // Use these variables to customize the grid system
 
-$gs-rows-height: 45px;
+$gs-cols-height: 45px;
 $gs-cols-number: 12;
-$gs-border-color: #c3c3c3;
+$gs-cols-padding: 5px;
+$gs-border-color: #c0d8e8;
 
 $gs-row-border-top: none;
 $gs-row-border-bottom: 1px solid $gs-border-color;
 $gs-row-border-left: none;
 $gs-row-border-right: none;
+$gs-row-even-background-color: #f1f6fa;
 $gs-row-odd-background-color: #fff;
-$gs-row-even-background-color: #d3d3d3;
-$gs-row-hover-background-color: #a6a6a6;
+$gs-row-hover-background-color: #deedf8;
+$gs-row-selected: #fdf6ee;
+$gs-row-selected-border: #fff;
+$gs-row-selected-border-bottom: 1px solid $gs-row-selected-border;
 $gs-row-padding: 0;
-
-$gs-col-border-top: none;
-$gs-col-border-bottom: none;
-$gs-col-border-left: none;
-$gs-col-border-right: none;
+$gs-row-font-color: #596276;
 
 $gs-header-border-top: 1px solid $gs-border-color;
 $gs-header-border-bottom: 1px solid $gs-border-color;
@@ -25,6 +25,10 @@ $gs-header-border-left: none;
 $gs-header-border-right: none;
 $gs-header-hover-background-color: none;
 $gs-header-background-color: #fff;
+$gs-header-font-size: 13px;
+$gs-header-font-weight: bold;
+$gs-header-font-color: #5b6aa6;
+
 
 $gs-footer-border-top: none;
 $gs-footer-border-bottom: 1px solid $gs-border-color;
