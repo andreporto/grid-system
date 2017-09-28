@@ -151,6 +151,16 @@
     }
   }
 
+  .gs-no-padding {
+    // Apply for each gs-col*
+    $gs-col-class-name: gs-col !default;
+    @for $j from 1 through $gs-cols-number {
+      .#{$gs-col-class-name}#{$j} {
+        padding: 0;
+      }
+    }
+  }  
+  
   .gs-outline {
       border: $gs-outline-border;
   }
