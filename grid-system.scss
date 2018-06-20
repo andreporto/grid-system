@@ -1,8 +1,7 @@
-// Grid System by André Porto
-// License: MIT
+// Derivado de
+// https://github.com/andreporto/grid-system.git
 
 @import 'grid-system-theme.scss';
-@import 'alignment-system.scss';
 
 .gs-container {
   width: 100%;
@@ -10,9 +9,8 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     vertical-align: middle;
-    align-items: center;
   }
-  font-size: 13px;
+  font-size: $gs-row-font-size;
   font-weight: normal;
   color: $gs-row-font-color;
 
@@ -31,6 +29,23 @@
     }
   }
 
+  .striped-list {
+    .gs-striped:nth-child(odd)
+    {
+      background-color: $gs-row-odd-background-color;
+      &:hover {
+        background-color: $gs-row-hover-background-color;
+      }
+    }
+    .gs-striped:nth-child(even)
+    {
+      background-color: $gs-row-even-background-color;
+      &:hover {
+        background-color: $gs-row-hover-background-color;
+      }
+    }
+  }
+
   .gs-row {
     color: $gs-row-font-color;
 
@@ -41,7 +56,7 @@
       clear:both;
     }
 
-    &:not(.gs-header):not(.gs-footer){
+    &:not(.gs-header):not(.gs-footer):not(.gs-no-decorations){
       border-top: $gs-row-border-top;
       border-bottom: $gs-row-border-bottom;
       border-left: $gs-row-border-left;
@@ -58,7 +73,7 @@
       border-left: $gs-header-border-left;
       border-right: $gs-header-border-right;
       background-color: $gs-header-background-color !important;
-      font-size: 13px;
+      font-size: $gs-header-font-size;
       font-weight: bold;
       color: $gs-header-font-color;
     }
@@ -87,7 +102,6 @@
   @for $i from 1 through $gs-cols-number {
     .#{$gs-col-class-name}#{$i} {
       float: left;
-      min-height: 1px;
       width: $i/$gs-cols-number * 100%;
       vertical-align: middle;
       min-height: $gs-cols-height;
@@ -159,8 +173,8 @@
         padding: 0;
       }
     }
-  }  
-  
+  }
+
   .gs-outline {
       border: $gs-outline-border;
   }

@@ -15,8 +15,8 @@
 [align-vertical], .align-vertical {
     display: flex;
     flex-direction: row;
-    & > [class^="gs-col"],
-    & > [class^=" gs-col"] {
+    & [class^="gs-col"],
+    & [class^=" gs-col"] {
         display: flex;
         align-items: center;
         &.align-center {
@@ -29,4 +29,28 @@
             justify-content: flex-end;
         }
     }
+}
+
+.vertical-div {
+  width:100%;
+  text-align:center;
+  position:relative;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+[align-top], .align-top {
+  *{
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: auto;
+  }
+}
+
+[align-bottom], .align-bottom {
+  *{
+    vertical-align: bottom;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
 }
