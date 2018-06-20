@@ -1,23 +1,44 @@
 [align-center], .align-center {
-  text-align: center; }
-
+  text-align: center;
+}
 [align-left], .align-left {
-  text-align: left; }
-
+  text-align: left;
+}
 [align-right], .align-right {
-  text-align: right; }
-
+  text-align: right;
+}
 [align-vertical], .align-vertical {
   display: flex;
-  flex-direction: row; }
-  [align-vertical] > [class^="gs-col"], [align-vertical] > [class^=" gs-col"], .align-vertical > [class^="gs-col"], .align-vertical > [class^=" gs-col"] {
-    display: flex;
-    align-items: center; }
-    [align-vertical] > [class^="gs-col"].align-center, [align-vertical] > [class^=" gs-col"].align-center, .align-vertical > [class^="gs-col"].align-center, .align-vertical > [class^=" gs-col"].align-center {
-      justify-content: center; }
-    [align-vertical] > [class^="gs-col"].align-left, [align-vertical] > [class^=" gs-col"].align-left, .align-vertical > [class^="gs-col"].align-left, .align-vertical > [class^=" gs-col"].align-left {
-      justify-content: flex-start; }
-    [align-vertical] > [class^="gs-col"].align-right, [align-vertical] > [class^=" gs-col"].align-right, .align-vertical > [class^="gs-col"].align-right, .align-vertical > [class^=" gs-col"].align-right {
-      justify-content: flex-end; }
+  flex-direction: row;
+}
+[align-vertical] [class^="gs-col"], .align-vertical [class^="gs-col"], [align-vertical] [class^=" gs-col"], .align-vertical [class^=" gs-col"] {
+  display: flex;
+  align-items: center;
+}
+[align-vertical] [class^="gs-col"].align-center, .align-vertical [class^="gs-col"].align-center, [align-vertical] [class^=" gs-col"].align-center, .align-vertical [class^=" gs-col"].align-center {
+  justify-content: center;
+}
+[align-vertical] [class^="gs-col"].align-left, .align-vertical [class^="gs-col"].align-left, [align-vertical] [class^=" gs-col"].align-left, .align-vertical [class^=" gs-col"].align-left {
+  justify-content: flex-start;
+}
+[align-vertical] [class^="gs-col"].align-right, .align-vertical [class^="gs-col"].align-right, [align-vertical] [class^=" gs-col"].align-right, .align-vertical [class^=" gs-col"].align-right {
+  justify-content: flex-end;
+}
+.vertical-div {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+[align-top] *, .align-top * {
+  vertical-align: top;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+[align-bottom] *, .align-bottom * {
+  vertical-align: bottom;
+  margin-top: auto;
+  margin-bottom: 0;
+}
 
-/*# sourceMappingURL=alignment-system.css.map */
