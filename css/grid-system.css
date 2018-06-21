@@ -9,28 +9,16 @@
   -moz-box-sizing: border-box;
   vertical-align: middle;
 }
-.gs-container .gs-striped:nth-child(odd) div.gs-row.gs-striped:not(.gs-row-selected) {
+.gs-container .gs-striped:nth-child(odd):not(.gs-row-selected) {
   background-color: #fff;
 }
-.gs-container .gs-striped:nth-child(odd) div.gs-row.gs-striped:not(.gs-row-selected):hover {
+.gs-container .gs-striped:nth-child(odd):not(.gs-row-selected):hover {
   background-color: #deedf8;
 }
-.gs-container .gs-striped:nth-child(even) div.gs-row.gs-striped:not(.gs-row-selected) {
+.gs-container .gs-striped:nth-child(even):not(.gs-row-selected) {
   background-color: #f1f6fa;
 }
-.gs-container .gs-striped:nth-child(even) div.gs-row.gs-striped:not(.gs-row-selected):hover {
-  background-color: #deedf8;
-}
-.gs-container .striped-list .gs-striped:nth-child(odd) {
-  background-color: #fff;
-}
-.gs-container .striped-list .gs-striped:nth-child(odd):hover {
-  background-color: #deedf8;
-}
-.gs-container .striped-list .gs-striped:nth-child(even) {
-  background-color: #f1f6fa;
-}
-.gs-container .striped-list .gs-striped:nth-child(even):hover {
+.gs-container .gs-striped:nth-child(even):not(.gs-row-selected):hover {
   background-color: #deedf8;
 }
 .gs-container .gs-row {
@@ -77,14 +65,14 @@
 }
 .gs-container .gs-col1 {
   float: left;
-  width: 8.33333%;
+  width: 8.3333333333%;
   vertical-align: middle;
   min-height: 45px;
   padding: 5px;
 }
 .gs-container .gs-col2 {
   float: left;
-  width: 16.66667%;
+  width: 16.6666666667%;
   vertical-align: middle;
   min-height: 45px;
   padding: 5px;
@@ -98,14 +86,14 @@
 }
 .gs-container .gs-col4 {
   float: left;
-  width: 33.33333%;
+  width: 33.3333333333%;
   vertical-align: middle;
   min-height: 45px;
   padding: 5px;
 }
 .gs-container .gs-col5 {
   float: left;
-  width: 41.66667%;
+  width: 41.6666666667%;
   vertical-align: middle;
   min-height: 45px;
   padding: 5px;
@@ -119,14 +107,14 @@
 }
 .gs-container .gs-col7 {
   float: left;
-  width: 58.33333%;
+  width: 58.3333333333%;
   vertical-align: middle;
   min-height: 45px;
   padding: 5px;
 }
 .gs-container .gs-col8 {
   float: left;
-  width: 66.66667%;
+  width: 66.6666666667%;
   vertical-align: middle;
   min-height: 45px;
   padding: 5px;
@@ -140,14 +128,14 @@
 }
 .gs-container .gs-col10 {
   float: left;
-  width: 83.33333%;
+  width: 83.3333333333%;
   vertical-align: middle;
   min-height: 45px;
   padding: 5px;
 }
 .gs-container .gs-col11 {
   float: left;
-  width: 91.66667%;
+  width: 91.6666666667%;
   vertical-align: middle;
   min-height: 45px;
   padding: 5px;
@@ -1646,3 +1634,4 @@
   transition: height 0;
 }
 
+/*# sourceMappingURL=grid-system.css.map */
