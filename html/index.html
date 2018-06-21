@@ -12,45 +12,64 @@
 <body>
     <p>Porto Grid System</p>
     <div class="gs-container">
+
+        <p>
+            header:
+        </p>
+        
         <div class="gs-row gs-header">
-            <div class="gs-col2 gs-outline"><p>p1</p></div>
-            <div class="gs-col4 gs-outline"><p>p2</p></div>
-            <div class="gs-col3 gs-outline">t1</div>
-            <div class="gs-col3 gs-outline">t2</div>
+            <div class="gs-col2 gs-outline"><p>parag 1 outline</p></div>
+            <div class="gs-col4 gs-outline"><p>parag 2 outline</p></div>
+            <div class="gs-col3 gs-outline">text only 1 outline</div>
+            <div class="gs-col3 gs-outline">text only 2 outline</div>
+        </div>
+
+        <p>
+            stripped rows
+        </p>
+        
+        <div class="gs-row gs-striped align-vertical">
+            <div class="gs-col2 align-center"><strong>strong center</strong></div>
+            <div class="gs-col4"><p>parag 3</p></div>
+            <div class="gs-col3"><span>span 1</span></div>
+            <div class="gs-col3"><div class="align-center"><em>center on div doesn't work</em></div></div>
         </div>
         <div class="gs-row gs-striped align-vertical">
-            <div class="gs-col2 align-center"><strong>strong</strong></div>
-            <div class="gs-col4"><p>p3</p></div>
-            <div class="gs-col3"><span>span1</span></div>
-            <div class="gs-col3"><div class="align-center">div1</div></div>
+            <div class="gs-col2 align-center align-bottom"><strong>strong center bottom</strong></div>
+            <div class="gs-col4"><p>parag 3</p></div>
+            <div class="gs-col3 align-bottom"><span>span bottom 1</span></div>
+            <div class="gs-col3"><div class="align-center"><em>center no div doesn't work</em></div></div>
         </div>
         <div class="gs-row gs-striped align-vertical gs-outline">
-            <div class="gs-col3 align-center gs-outline"><p>p4</p></div>
+            <div class="gs-col3 align-center gs-outline"><p>p4 center outline</p></div>
             <div class="gs-col3 gs-outline">
-                <div class="gs-col6 align-center"><p>p5</p></div>
-                <div class="gs-col6 align-right"><p>p6</p></div>
+                <div class="gs-col6 align-center"><p>p5 center</p></div>
+                <div class="gs-col6 align-right"><p>p6 right</p></div>
             </div>
-            <div class="gs-col3 align-center gs-outline">t3</div>
-            <div class="gs-col3 gs-outline">t4</div>
+            <div class="gs-col3 align-center gs-outline">text center outline 3</div>
+            <div class="gs-col3 gs-outline">text outline 4</div>
         </div>
         <div class="gs-row gs-striped align-vertical">
             <div class="gs-col6 align-center gs-outline">
                 col6
             </div>
             <div class="gs-col6 gs-outline">
-                <div class="gs-col1 align-center gs-outline">c1</div>
-                <div class="gs-col9 align-center gs-outline">c9</div>
-                <div class="gs-col2 align-center gs-outline">c2</div>
+                <div class="gs-col1 align-center gs-outline">sub c1</div>
+                <div class="gs-col9 align-center gs-outline">sub c9</div>
+                <div class="gs-col2 align-center gs-outline">sub c2</div>
             </div>
         </div>
         
-
+        <p>
+            footer:
+        </p>
+            
         <div class="gs-row gs-footer align-vertical">
-            <div class="gs-col3 align-center gs-outline">1</div>
-            <div class="gs-col2 align-center gs-outline"><p>2</p></div>
-            <div class="gs-col2 align-left gs-outline">3</div>
-            <div class="gs-col3 align-right gs-outline">4</div>
-            <div class="gs-col2 align-center gs-outline">5</div>
+            <div class="gs-col3 align-center gs-outline">center outline 1</div>
+            <div class="gs-col2 align-center gs-outline"><p>center outline 2</p></div>
+            <div class="gs-col2 align-left gs-outline">left outline 3</div>
+            <div class="gs-col3 align-right gs-outline">right outline 4</div>
+            <div class="gs-col2 align-center gs-outline">center outline 5</div>
         </div>
     </div>
 </body>
